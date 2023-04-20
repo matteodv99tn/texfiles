@@ -1,0 +1,40 @@
+%% --- Packages import
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{dsfont}
+
+
+%% --- General notation
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\diff}[2]{\frac{\d #1}{\d #2}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+
+%% --- Representation
+\newcommand{\vector}[1]{\boldsymbol{#1}}
+\newcommand{\matrix}[1]{\mathbf{#1}}
+
+%% --- Linear algebra
+\newcommand{\transpose}[1]{{#1}^\top}
+\newcommand{\inverse}[1]{{#1}^{-1}}
+
+%% --- Common symbols
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\lagrangian}{\mathcal{L}}
+\newcommand{\reals}{\mathds{R}}
+
+%% --- Operators
+\newcommand{\laplacetransform}[1]{\laplace \left\{ #1 \right\}}
+\newcommand{\inverselaplacetransform}[1]{\laplace^{-1} \left\{ #1 \right\}}
+\newcommand{\realpart}[1]{\mathbb{R}e\left\{#1\right\}}
+\newcommand{\imaginarypart}[1]{\mathbb{I}m\left\{#1\right\}}
+
+%% --- Statistics
+\newcommand{\expectationsymbol}{\mathbb{E}}
+\newcommand{\variancesymbol}{\mathbb{V}}
+\newcommand{\covariancesymbol}{\mathbb{C} \mathrm{ov}}
+\newcommand{\probability}[1]{\mathbb{P} \mathrm{r} \left\{ #1 \right\}}
+\newcommand{\expectation}[1]{\expectationsymbol \left\{ #1 \right\}}
+\newcommand{\variance}[1]{\variancesymbol \left\{ #1 \right\}}
+\newcommand{\covariance}[1]{\covariancesymbol \left\{ #1 \right\}}
